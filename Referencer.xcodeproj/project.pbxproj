@@ -16,6 +16,7 @@
 		FE59562224172AD9005B7F03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE59562024172AD9005B7F03 /* LaunchScreen.storyboard */; };
 		FE59562D24172AD9005B7F03 /* ReferencerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59562C24172AD9005B7F03 /* ReferencerTests.swift */; };
 		FE59563824172AD9005B7F03 /* ReferencerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59563724172AD9005B7F03 /* ReferencerUITests.swift */; };
+		FE5A884E2420819A0016BC22 /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5A884D2420819A0016BC22 /* CatalogView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		FE59563324172AD9005B7F03 /* ReferencerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReferencerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE59563724172AD9005B7F03 /* ReferencerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencerUITests.swift; sourceTree = "<group>"; };
 		FE59563924172AD9005B7F03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE5A884D2420819A0016BC22 /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +105,12 @@
 			children = (
 				FE59561524172AD8005B7F03 /* AppDelegate.swift */,
 				FE59561724172AD8005B7F03 /* SceneDelegate.swift */,
+				FE5A884D2420819A0016BC22 /* CatalogView.swift */,
 				FE59561924172AD8005B7F03 /* ContentView.swift */,
-				FE59561B24172AD9005B7F03 /* Assets.xcassets */,
+				FE2060B72418AF55005CF795 /* starStats.swift */,
 				FE59562024172AD9005B7F03 /* LaunchScreen.storyboard */,
 				FE59562324172AD9005B7F03 /* Info.plist */,
-				FE2060B72418AF55005CF795 /* starStats.swift */,
+				FE59561B24172AD9005B7F03 /* Assets.xcassets */,
 				FE59561D24172AD9005B7F03 /* Preview Content */,
 			);
 			path = Referencer;
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE5A884E2420819A0016BC22 /* CatalogView.swift in Sources */,
 				FE59561624172AD8005B7F03 /* AppDelegate.swift in Sources */,
 				FE59561824172AD8005B7F03 /* SceneDelegate.swift in Sources */,
 				FE2060B82418AF55005CF795 /* starStats.swift in Sources */,

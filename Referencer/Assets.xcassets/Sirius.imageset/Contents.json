@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Sirius.jpg",
+      "filename" : "SiriusSmall.jpeg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "Sirius.jpg",
       "scale" : "2x"
     },
     {

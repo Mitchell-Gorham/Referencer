@@ -16,7 +16,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             //Image of Object
-            Image(star.image)
+            Image(star.name)
             //Name of Object
             Text(star.name)
                 .font(.largeTitle)
@@ -42,7 +42,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(star: starStats (image: "Sirius", name: "Sirius", const: "Canis Major", appMag: -1.46, dist: 8.6)
+        ContentView(star: starStats (name: "Sirius", const: "Canis Major", appMag: -1.46, dist: 8.6)
 )
     }
 }

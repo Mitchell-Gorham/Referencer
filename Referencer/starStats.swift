@@ -9,7 +9,6 @@
 import Foundation
 
 struct starStats {
-    var image: String
     var name: String
     var const: String
     var appMag: Double

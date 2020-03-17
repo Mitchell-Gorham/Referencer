@@ -20,15 +20,13 @@ class ReferencerTests: XCTestCase {
     }
 
     func testExample() {
-        let image = "image"
         let name = "name"
         let const = "constellation"
         let appMag = 64.3
         let dist = 23.78
         
-        let testStruct = starStats(image: image, name: name, const: const, appMag: appMag, dist: dist )
+        let testStruct = starStats(name: name, const: const, appMag: appMag, dist: dist )
 
-        XCTAssertEqual(testStruct.image, image)
         XCTAssertEqual(testStruct.name, name)
         XCTAssertEqual(testStruct.const, const)
         XCTAssertEqual(testStruct.appMag, appMag)
