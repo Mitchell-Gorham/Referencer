@@ -8,30 +8,36 @@
 
 import SwiftUI
 
-var starCatalog =  ["Sirius", "Body 1", "Body 2", "Body 3"]
+//var starCatalog: [starCatalog]
 
-struct CatalogView: View {    
+struct CatalogView: View {
+    var starCatalog: [starStats]
     var body: some View {
         VStack {
-            Text("Celestial Bodies")
-                .font(.largeTitle)
             List(0 ..< starCatalog.count) { item in
-                HStack {
-                    //let image = UIImage(named: starCatalog[item])
-                    Image(starCatalog[item])
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 120.0, height: 80.0, alignment: .leading)
-                    Text(starCatalog[item])
-                }.frame(minWidth: 0, maxWidth: .infinity)
+                //ZStack {
+                    HStack {
+                        NavigationLink(destination: DetailView(star: self.starCatalog[item])) {
+                            Image(self.starCatalog[item].name)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 120.0, height: 80.0)
+                            Text(self.starCatalog[item].name)
+                            Spacer()
+                            Text(self.starCatalog[item].const)
+                                .foregroundColor(Color.gray)
+                        }
+                    }
+                //}
             }
         }
     }
 }
 
-struct ReferencerListView_Previews: PreviewProvider {
-    static var previews: some View {
-        CatalogView()
-    }
-}
-t
+//struct ReferencerListView_Previews: PreviewProvider {
+//    static var previews: some View {
+//          CatalogView()
+//    }
+//}
+
+//Navigation View, Nav Link
