@@ -21,7 +21,6 @@ struct DetailView: View {
                 //Name of Object
                 Text(star.name)
                     .font(.largeTitle)
-                    .multilineTextAlignment(.leading)
                 //Object Fixed/Variable Info
                 HStack {
                     //Fixed Information
