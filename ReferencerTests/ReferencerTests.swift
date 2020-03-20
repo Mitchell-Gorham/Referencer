@@ -19,7 +19,7 @@ class ReferencerTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
+    func testStarStruct() {
         let name = "name"
         let const = "constellation"
         let appMag = 64.3
@@ -31,6 +31,15 @@ class ReferencerTests: XCTestCase {
         XCTAssertEqual(testStruct.const, const)
         XCTAssertEqual(testStruct.appMag, appMag)
         XCTAssertEqual(testStruct.dist, dist)
+    }
+    
+    func testArrayPassing() {
+        let star0 = starStats(name: "star0", const: "const0", appMag: 0, dist: 0)
+        let star1 = starStats(name: "star1", const: "const1", appMag: 1, dist: 1)
+        let star2 = starStats(name: "star2", const: "const2", appMag: 2, dist: 2)
+        let starArray: [starStats] = [star0, star1, star2]
+        
+        XCTAssertEqual(3, starArray.count)
         
     }
 

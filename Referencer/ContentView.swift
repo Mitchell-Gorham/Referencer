@@ -8,8 +8,6 @@
 
 import SwiftUI
 
-
-
 struct ContentView: View {
     var starCatalog: [starStats]
     var body: some View {

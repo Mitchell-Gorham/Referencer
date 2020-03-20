@@ -13,21 +13,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
     
+    // Strut Array Declaration
+    
     let Sirius = starStats (name: "Sirius", const: "Canis Major", appMag: -1.46, dist: 8.6)
-    let Messier = starStats (name: "Messier 78", const: "Orion", appMag: 8.3, dist: 1350)
-   
+    let Messier = starStats (name: "Messier 78", const: "Orion", appMag: +8.30, dist: 1350)
+    let Betelgeuse = starStats (name: "Betelgeuse", const: "Orion", appMag: 0.50, dist: 700)
+    let Pleiades = starStats (name: "Pleiades", const: "Taurus", appMag: +1.6, dist: 444)
+        
     var starArray: [starStats] = []
     
-    //var starArray: [starStats] = [Sirius: starStats(name: "Sirius", const: "Canis Major", appMag: -1.46, dist: 8.6), Test: starStats (name: "Test", const: "Test Major", appMag: 5.23, dist: 3.2)]
-
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        starArray = [Sirius, Messier]
-        let contentView = ContentView(starCatalog: starArray )
+        starArray = [Sirius, Messier, Betelgeuse, Pleiades]
+        let contentView = ContentView(starCatalog: starArray)
         
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
