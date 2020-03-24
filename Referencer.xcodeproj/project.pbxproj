@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE2060B82418AF55005CF795 /* starStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2060B72418AF55005CF795 /* starStats.swift */; };
+		FE2060B82418AF55005CF795 /* starClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2060B72418AF55005CF795 /* starClass.swift */; };
 		FE59561624172AD8005B7F03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59561524172AD8005B7F03 /* AppDelegate.swift */; };
 		FE59561824172AD8005B7F03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59561724172AD8005B7F03 /* SceneDelegate.swift */; };
 		FE59561A24172AD8005B7F03 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59561924172AD8005B7F03 /* DetailView.swift */; };
@@ -38,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FE2060B72418AF55005CF795 /* starStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starStats.swift; sourceTree = "<group>"; };
+		FE2060B72418AF55005CF795 /* starClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starClass.swift; sourceTree = "<group>"; };
 		FE59561224172AD8005B7F03 /* Referencer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Referencer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE59561524172AD8005B7F03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE59561724172AD8005B7F03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 				FEE729F32421DFA0008184F3 /* ContentView.swift */,
 				FE5A884D2420819A0016BC22 /* CatalogView.swift */,
 				FE59561924172AD8005B7F03 /* DetailView.swift */,
-				FE2060B72418AF55005CF795 /* starStats.swift */,
+				FE2060B72418AF55005CF795 /* starClass.swift */,
 				FE59562024172AD9005B7F03 /* LaunchScreen.storyboard */,
 				FE59562324172AD9005B7F03 /* Info.plist */,
 				FE59561B24172AD9005B7F03 /* Assets.xcassets */,
@@ -280,7 +280,7 @@
 				FE59561624172AD8005B7F03 /* AppDelegate.swift in Sources */,
 				FEE729F42421DFA0008184F3 /* ContentView.swift in Sources */,
 				FE59561824172AD8005B7F03 /* SceneDelegate.swift in Sources */,
-				FE2060B82418AF55005CF795 /* starStats.swift in Sources */,
+				FE2060B82418AF55005CF795 /* starClass.swift in Sources */,
 				FE59561A24172AD8005B7F03 /* DetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

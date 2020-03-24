@@ -10,18 +10,18 @@ import SwiftUI
 
 struct DetailView: View {
     // Variable Declaration
-    var star: starStats
-    
+    @State var star: starClass
+    //@State private var text = ""
     // View Display
     var body: some View {
         ScrollView(.vertical) {
             VStack {
                 //Image of Object
-                Image(star.name)
+                Image(star.image)
                 //Name of Object
                 Text(star.name)
                     .font(.largeTitle)
-                //Object Fixed/Variable Info
+                //Star Fixed/Variable Info
                 HStack {
                     //Fixed Information
                     VStack(alignment: .leading) {
@@ -36,6 +36,13 @@ struct DetailView: View {
                         Text(String(star.dist)+" ly")
                     }
                 }
+                Spacer(minLength: 30)
+                //Editable Text Field for Notes
+                Text("Notes:")
+                    .font(.headline)
+                TextField("Add some notes here", text: $star.notes)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .frame(width:UIScreen.main.bounds.width-25)
             }
         }
     }
@@ -43,7 +50,7 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(star: starStats (name: "Sirius", const: "Canis Major", appMag: -1.46, dist: 8.6)
+        DetailView(star: starClass (image: "Sirius", name: "Sirius", const: "Canis Major", appMag: -1.46, dist: 8.6, notes: "Sirius is the brightest star in the night sky")
 )
     }
 }

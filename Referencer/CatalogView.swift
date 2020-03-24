@@ -11,11 +11,11 @@ import SwiftUI
 //var starCatalog: [starCatalog]
 
 struct CatalogView: View {
-    var starCatalog: [starStats]
+    var starCatalog: [starClass]
     var body: some View {
         List(0 ..< starCatalog.count) { item in
             NavigationLink(destination: DetailView(star: self.starCatalog[item])) {
-                Image(self.starCatalog[item].name)
+                Image(self.starCatalog[item].image)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 120.0, height: 80.0)
@@ -34,5 +34,3 @@ struct CatalogView: View {
 //          CatalogView()
 //    }
 //}
-
-//Navigation View, Nav Link

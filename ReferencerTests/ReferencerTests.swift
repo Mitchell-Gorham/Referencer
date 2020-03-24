@@ -19,28 +19,44 @@ class ReferencerTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testStarStruct() {
+    func testStarClass() {
+        let image = "image"
         let name = "name"
         let const = "constellation"
         let appMag = 64.3
         let dist = 23.78
+        let notes = "testnote"
         
-        let testStruct = starStats(name: name, const: const, appMag: appMag, dist: dist )
+        let testClass = starClass(image: image, name: name, const: const, appMag: appMag, dist: dist, notes: notes)
 
-        XCTAssertEqual(testStruct.name, name)
-        XCTAssertEqual(testStruct.const, const)
-        XCTAssertEqual(testStruct.appMag, appMag)
-        XCTAssertEqual(testStruct.dist, dist)
+        XCTAssertEqual(testClass.image, image)
+        XCTAssertEqual(testClass.name, name)
+        XCTAssertEqual(testClass.const, const)
+        XCTAssertEqual(testClass.appMag, appMag)
+        XCTAssertEqual(testClass.dist, dist)
     }
     
     func testArrayPassing() {
-        let star0 = starStats(name: "star0", const: "const0", appMag: 0, dist: 0)
-        let star1 = starStats(name: "star1", const: "const1", appMag: 1, dist: 1)
-        let star2 = starStats(name: "star2", const: "const2", appMag: 2, dist: 2)
-        let starArray: [starStats] = [star0, star1, star2]
+        let star0 = starClass(image: "star0", name: "star0", const: "const0", appMag: 0, dist: 0, notes: "n0")
+        let star1 = starClass(image: "star1", name: "star1", const: "const1", appMag: 1, dist: 1, notes: "n1")
+        let star2 = starClass(image: "star2", name: "star2", const: "const2", appMag: 2, dist: 2, notes: "n2")
+        let starArray: [starClass] = [star0, star1, star2]
         
         XCTAssertEqual(3, starArray.count)
         
+    }
+    
+    func testTextBoxUpdate() {
+        let starNotes = starClass(image: "", name: "", const: "", appMag: 0, dist: 0, notes: "This is original")
+        let newNotes = starNotes
+        let notechange = "This is unoriginal"
+        TextBoxModifierFunc(input: newNotes, note: notechange)
+        XCTAssertEqual(starNotes.notes, "This is unoriginal")
+     
+    }
+    
+    func TextBoxModifierFunc(input: starClass, note: String) {
+        input.notes = note
     }
 
     func testPerformanceExample() {

@@ -9,11 +9,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    var starCatalog: [starStats]
+    var starCatalog: [starClass]
     var body: some View {
         NavigationView {
             CatalogView(starCatalog: starCatalog)
                 .navigationBarTitle("Celestial Bodies")
+//                .navigationBarItems(trailing:
+//                    Button(
+//                        action: { print("Nav to New Item Entry")},
+//                        label: { Text("New Entry")}
+//                    )
+//                )
         }
     }
 }

@@ -15,12 +15,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     // Strut Array Declaration
     
-    let Sirius = starStats (name: "Sirius", const: "Canis Major", appMag: -1.46, dist: 8.6)
-    let Messier = starStats (name: "Messier 78", const: "Orion", appMag: +8.30, dist: 1350)
-    let Betelgeuse = starStats (name: "Betelgeuse", const: "Orion", appMag: 0.50, dist: 700)
-    let Pleiades = starStats (name: "Pleiades", const: "Taurus", appMag: +1.6, dist: 444)
+    let Sirius = starClass (image: "Sirius", name: "Sirius", const: "Canis Major", appMag: -1.46, dist: 8.6,
+                            notes: "Sirius is the brightest star in the night sky")
+    let Messier = starClass (image: "Messier 78", name: "Messier 78", const: "Orion", appMag: +8.30, dist: 1350,
+                             notes: "Messier 78 was discovered by Pierre Méchain in 1780")
+    let Betelgeuse = starClass (image: "Betelgeuse" ,name: "Betelgeuse", const: "Orion", appMag: 0.50, dist: 700,
+                                notes: "Pronounced Bettlejuice (Yes, as in the movie)")
+    let Pleiades = starClass (image: "Pleiades", name: "Pleiades", const: "Taurus", appMag: +1.6, dist: 444,
+                              notes: "Also known as The Seven Sisters")
         
-    var starArray: [starStats] = []
+    var starArray: [starClass] = []
     
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
