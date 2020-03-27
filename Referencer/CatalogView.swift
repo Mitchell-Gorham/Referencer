@@ -8,20 +8,18 @@
 
 import SwiftUI
 
-//var starCatalog: [starCatalog]
-
 struct CatalogView: View {
-    var starCatalog: [starClass]
+    var starCatalog: starCatalogClass
     var body: some View {
-        List(0 ..< starCatalog.count) { item in
-            NavigationLink(destination: DetailView(star: self.starCatalog[item])) {
-                Image(self.starCatalog[item].image)
+        List(0 ..< starCatalog.array.count) { item in
+            NavigationLink(destination: DetailView(star: self.starCatalog.array[item])) {
+                Image(self.starCatalog.array[item].image)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 120.0, height: 80.0)
-                Text(self.starCatalog[item].name)
+                Text(self.starCatalog.array[item].name)
                 Spacer()
-                Text(self.starCatalog[item].const)
+                Text(self.starCatalog.array[item].const)
                     .foregroundColor(Color.gray)
                     
             }

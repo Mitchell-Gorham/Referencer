@@ -34,6 +34,7 @@ class ReferencerTests: XCTestCase {
         XCTAssertEqual(testClass.const, const)
         XCTAssertEqual(testClass.appMag, appMag)
         XCTAssertEqual(testClass.dist, dist)
+        XCTAssertEqual(testClass.notes, notes)
     }
     
     func testArrayPassing() {
@@ -46,19 +47,6 @@ class ReferencerTests: XCTestCase {
         
     }
     
-    func testTextBoxUpdate() {
-        let starNotes = starClass(image: "", name: "", const: "", appMag: 0, dist: 0, notes: "This is original")
-        let newNotes = starNotes
-        let notechange = "This is unoriginal"
-        TextBoxModifierFunc(input: newNotes, note: notechange)
-        XCTAssertEqual(starNotes.notes, "This is unoriginal")
-     
-    }
-    
-    func TextBoxModifierFunc(input: starClass, note: String) {
-        input.notes = note
-    }
-
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

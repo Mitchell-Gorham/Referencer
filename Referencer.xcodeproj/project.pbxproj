@@ -17,6 +17,7 @@
 		FE59562D24172AD9005B7F03 /* ReferencerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59562C24172AD9005B7F03 /* ReferencerTests.swift */; };
 		FE59563824172AD9005B7F03 /* ReferencerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59563724172AD9005B7F03 /* ReferencerUITests.swift */; };
 		FE5A884E2420819A0016BC22 /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5A884D2420819A0016BC22 /* CatalogView.swift */; };
+		FED424CC242DAB8D0069C86A /* starCatalogClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED424CB242DAB8D0069C86A /* starCatalogClass.swift */; };
 		FEE729F42421DFA0008184F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE729F32421DFA0008184F3 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		FE59563724172AD9005B7F03 /* ReferencerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencerUITests.swift; sourceTree = "<group>"; };
 		FE59563924172AD9005B7F03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE5A884D2420819A0016BC22 /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
+		FED424CB242DAB8D0069C86A /* starCatalogClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starCatalogClass.swift; sourceTree = "<group>"; };
 		FEE729F32421DFA0008184F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +113,7 @@
 				FE5A884D2420819A0016BC22 /* CatalogView.swift */,
 				FE59561924172AD8005B7F03 /* DetailView.swift */,
 				FE2060B72418AF55005CF795 /* starClass.swift */,
+				FED424CB242DAB8D0069C86A /* starCatalogClass.swift */,
 				FE59562024172AD9005B7F03 /* LaunchScreen.storyboard */,
 				FE59562324172AD9005B7F03 /* Info.plist */,
 				FE59561B24172AD9005B7F03 /* Assets.xcassets */,
@@ -276,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FED424CC242DAB8D0069C86A /* starCatalogClass.swift in Sources */,
 				FE5A884E2420819A0016BC22 /* CatalogView.swift in Sources */,
 				FE59561624172AD8005B7F03 /* AppDelegate.swift in Sources */,
 				FEE729F42421DFA0008184F3 /* ContentView.swift in Sources */,

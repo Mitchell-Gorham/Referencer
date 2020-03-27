@@ -13,7 +13,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
     
-    // Strut Array Declaration
+    // Class Array Declaration
     
     let Sirius = starClass (image: "Sirius", name: "Sirius", const: "Canis Major", appMag: -1.46, dist: 8.6,
                             notes: "Sirius is the brightest star in the night sky")
@@ -24,8 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     let Pleiades = starClass (image: "Pleiades", name: "Pleiades", const: "Taurus", appMag: +1.6, dist: 444,
                               notes: "Also known as The Seven Sisters")
         
-    var starArray: [starClass] = []
-    
+    var starArray: starCatalogClass = starCatalogClass()
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
@@ -33,7 +32,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
 
         // Create the SwiftUI view that provides the window contents.
-        starArray = [Sirius, Messier, Betelgeuse, Pleiades]
+
+        starArray.add(Sirius)
+        starArray.add(Messier)
+        starArray.add(Betelgeuse)
+        starArray.add(Pleiades)
         let contentView = ContentView(starCatalog: starArray)
         
         // Use a UIHostingController as window root view controller.
