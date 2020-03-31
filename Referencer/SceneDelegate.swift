@@ -15,16 +15,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     // Class Array Declaration
     
-    let Sirius = starClass (image: "Sirius", name: "Sirius", const: "Canis Major", appMag: -1.46, dist: 8.6,
+    let Sirius = StarClass (image: "Sirius", name: "Sirius", const: "Canis Major", appMag: "-1.46", dist: "8.6",
                             notes: "Sirius is the brightest star in the night sky")
-    let Messier = starClass (image: "Messier 78", name: "Messier 78", const: "Orion", appMag: +8.30, dist: 1350,
+    let Messier = StarClass (image: "Messier 78", name: "Messier 78", const: "Orion", appMag: "+8.30", dist: "1350",
                              notes: "Messier 78 was discovered by Pierre Méchain in 1780")
-    let Betelgeuse = starClass (image: "Betelgeuse" ,name: "Betelgeuse", const: "Orion", appMag: 0.50, dist: 700,
+    let Betelgeuse = StarClass (image: "Betelgeuse" ,name: "Betelgeuse", const: "Orion", appMag: "0.50", dist: "700",
                                 notes: "Pronounced Bettlejuice (Yes, as in the movie)")
-    let Pleiades = starClass (image: "Pleiades", name: "Pleiades", const: "Taurus", appMag: +1.6, dist: 444,
+    let Pleiades = StarClass (image: "Pleiades", name: "Pleiades", const: "Taurus", appMag: "+1.6", dist: "444",
                               notes: "Also known as The Seven Sisters")
         
-    var starArray: starCatalogClass = starCatalogClass()
+    var starArray: StarCatalogViewModel = StarCatalogViewModel()
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.

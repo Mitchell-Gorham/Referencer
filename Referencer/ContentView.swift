@@ -9,16 +9,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    var starCatalog: starCatalogClass
+    @ObservedObject var starCatalog: StarCatalogViewModel
+    
     var body: some View {
         NavigationView {
-            CatalogView(starCatalog: starCatalog)
+            MasterView(starCatalog: starCatalog)
                 .navigationBarTitle("Celestial Bodies")
                 .navigationBarItems(
                     leading: EditButton(),
                     trailing: Button(
                         action: {
-                            withAnimation { self.starCatalog.add(starClass(image:"null", name:"New Body", const:"Enter Constellation", appMag: 0.0, dist: 0.0, notes: "Enter in some Notes" )) }
+                            withAnimation { self.starCatalog.add(StarClass(image:"null", name:"New Body", const:"Enter Constellation", appMag: "0.0", dist: "0.0", notes: "Enter in some Notes" )) }
                         }
                     ) { Image(systemName: "plus") }
                 )

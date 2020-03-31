@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE2060B82418AF55005CF795 /* starClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2060B72418AF55005CF795 /* starClass.swift */; };
+		FE2060B82418AF55005CF795 /* StarClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2060B72418AF55005CF795 /* StarClass.swift */; };
+		FE3E0F352433249C00E8801E /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E0F342433249C00E8801E /* RowView.swift */; };
 		FE59561624172AD8005B7F03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59561524172AD8005B7F03 /* AppDelegate.swift */; };
 		FE59561824172AD8005B7F03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59561724172AD8005B7F03 /* SceneDelegate.swift */; };
 		FE59561A24172AD8005B7F03 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59561924172AD8005B7F03 /* DetailView.swift */; };
@@ -16,8 +17,8 @@
 		FE59562224172AD9005B7F03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE59562024172AD9005B7F03 /* LaunchScreen.storyboard */; };
 		FE59562D24172AD9005B7F03 /* ReferencerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59562C24172AD9005B7F03 /* ReferencerTests.swift */; };
 		FE59563824172AD9005B7F03 /* ReferencerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59563724172AD9005B7F03 /* ReferencerUITests.swift */; };
-		FE5A884E2420819A0016BC22 /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5A884D2420819A0016BC22 /* CatalogView.swift */; };
-		FED424CC242DAB8D0069C86A /* starCatalogClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED424CB242DAB8D0069C86A /* starCatalogClass.swift */; };
+		FE5A884E2420819A0016BC22 /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5A884D2420819A0016BC22 /* MasterView.swift */; };
+		FED424CC242DAB8D0069C86A /* StarCatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED424CB242DAB8D0069C86A /* StarCatalogViewModel.swift */; };
 		FEE729F42421DFA0008184F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE729F32421DFA0008184F3 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FE2060B72418AF55005CF795 /* starClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starClass.swift; sourceTree = "<group>"; };
+		FE2060B72418AF55005CF795 /* StarClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarClass.swift; sourceTree = "<group>"; };
+		FE3E0F342433249C00E8801E /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		FE59561224172AD8005B7F03 /* Referencer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Referencer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE59561524172AD8005B7F03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE59561724172AD8005B7F03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,8 +56,8 @@
 		FE59563324172AD9005B7F03 /* ReferencerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReferencerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE59563724172AD9005B7F03 /* ReferencerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReferencerUITests.swift; sourceTree = "<group>"; };
 		FE59563924172AD9005B7F03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FE5A884D2420819A0016BC22 /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
-		FED424CB242DAB8D0069C86A /* starCatalogClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = starCatalogClass.swift; sourceTree = "<group>"; };
+		FE5A884D2420819A0016BC22 /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
+		FED424CB242DAB8D0069C86A /* StarCatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarCatalogViewModel.swift; sourceTree = "<group>"; };
 		FEE729F32421DFA0008184F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,10 +112,11 @@
 				FE59561524172AD8005B7F03 /* AppDelegate.swift */,
 				FE59561724172AD8005B7F03 /* SceneDelegate.swift */,
 				FEE729F32421DFA0008184F3 /* ContentView.swift */,
-				FE5A884D2420819A0016BC22 /* CatalogView.swift */,
+				FE5A884D2420819A0016BC22 /* MasterView.swift */,
+				FE3E0F342433249C00E8801E /* RowView.swift */,
 				FE59561924172AD8005B7F03 /* DetailView.swift */,
-				FE2060B72418AF55005CF795 /* starClass.swift */,
-				FED424CB242DAB8D0069C86A /* starCatalogClass.swift */,
+				FE2060B72418AF55005CF795 /* StarClass.swift */,
+				FED424CB242DAB8D0069C86A /* StarCatalogViewModel.swift */,
 				FE59562024172AD9005B7F03 /* LaunchScreen.storyboard */,
 				FE59562324172AD9005B7F03 /* Info.plist */,
 				FE59561B24172AD9005B7F03 /* Assets.xcassets */,
@@ -279,12 +282,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FED424CC242DAB8D0069C86A /* starCatalogClass.swift in Sources */,
-				FE5A884E2420819A0016BC22 /* CatalogView.swift in Sources */,
+				FED424CC242DAB8D0069C86A /* StarCatalogViewModel.swift in Sources */,
+				FE5A884E2420819A0016BC22 /* MasterView.swift in Sources */,
 				FE59561624172AD8005B7F03 /* AppDelegate.swift in Sources */,
+				FE3E0F352433249C00E8801E /* RowView.swift in Sources */,
 				FEE729F42421DFA0008184F3 /* ContentView.swift in Sources */,
 				FE59561824172AD8005B7F03 /* SceneDelegate.swift in Sources */,
-				FE2060B82418AF55005CF795 /* starClass.swift in Sources */,
+				FE2060B82418AF55005CF795 /* StarClass.swift in Sources */,
 				FE59561A24172AD8005B7F03 /* DetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

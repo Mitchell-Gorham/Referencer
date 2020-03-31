@@ -23,11 +23,11 @@ class ReferencerTests: XCTestCase {
         let image = "image"
         let name = "name"
         let const = "constellation"
-        let appMag = 64.3
-        let dist = 23.78
+        let appMag = "64.3"
+        let dist = "23.78"
         let notes = "testnote"
         
-        let testClass = starClass(image: image, name: name, const: const, appMag: appMag, dist: dist, notes: notes)
+        let testClass = StarClass(image: image, name: name, const: const, appMag: appMag, dist: dist, notes: notes)
 
         XCTAssertEqual(testClass.image, image)
         XCTAssertEqual(testClass.name, name)
@@ -38,10 +38,10 @@ class ReferencerTests: XCTestCase {
     }
     
     func testArrayPassing() {
-        let star0 = starClass(image: "star0", name: "star0", const: "const0", appMag: 0, dist: 0, notes: "n0")
-        let star1 = starClass(image: "star1", name: "star1", const: "const1", appMag: 1, dist: 1, notes: "n1")
-        let star2 = starClass(image: "star2", name: "star2", const: "const2", appMag: 2, dist: 2, notes: "n2")
-        let starArray: [starClass] = [star0, star1, star2]
+        let star0 = StarClass(image: "star0", name: "star0", const: "const0", appMag: "0", dist: "0", notes: "n0")
+        let star1 = StarClass(image: "star1", name: "star1", const: "const1", appMag: "1", dist: "1", notes: "n1")
+        let star2 = StarClass(image: "star2", name: "star2", const: "const2", appMag: "2", dist: "2", notes: "n2")
+        let starArray: [StarClass] = [star0, star1, star2]
         
         XCTAssertEqual(3, starArray.count)
         

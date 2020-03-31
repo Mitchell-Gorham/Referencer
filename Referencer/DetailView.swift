@@ -9,48 +9,51 @@
 import SwiftUI
 
 struct DetailView: View {
-    // Variable Declaration
-    @State var star: starClass
-    //@State private var text = ""
-    // View Display
+    @ObservedObject var star: StarClass
+
     var body: some View {
         ScrollView(.vertical) {
-            VStack {
-                //Image of Object
+            VStack() {
                 Image(star.image)
-                //Name of Object
-                Text(star.name)
+                    //.frame(width:UIScreen.main.bounds.width)
+                TextField("Star Name", text: $star.name)
                     .font(.largeTitle)
-                //Star Fixed/Variable Info
-                HStack {
-                    //Fixed Information
-                    VStack(alignment: .leading) {
-                        Text("Constellation:")
-                        Text("Apparent magnitude:")
-                        Text("Distance from Earth:")
-                    }
-                    //Variable Information
-                    VStack(alignment: .leading ) {
-                        Text(star.const)
-                        Text(String(star.appMag))
-                        Text(String(star.dist)+" ly")
-                    }
+                    .multilineTextAlignment(.center)
+                    .frame(width:UIScreen.main.bounds.width/2)
+            }
+            VStack{
+                HStack() {
+                    Text("Constellation:\t\t\t")
+                    TextField("Constellation", text: $star.const)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                }
+                HStack() {
+                    Text("Apparent Magnitude:\t")
+                    TextField("Apparent Magnitude", text: $star.appMag)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                }
+                HStack() {
+                    Text("Distance from Earth:\t")
+                    TextField("Distance", text: $star.dist)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    Text("ly")
                 }
                 Spacer(minLength: 30)
                 //Editable Text Field for Notes
                 Text("Notes:")
                     .font(.headline)
+                    .multilineTextAlignment(.center)
                 TextField("Add some notes here", text: $star.notes)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .frame(width:UIScreen.main.bounds.width-25)
-            }
-        }
+            }.frame(width:UIScreen.main.bounds.width-25)
+        }.frame(width:UIScreen.main.bounds.width-25)
     }
 }
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(star: starClass (image: "Sirius", name: "Sirius", const: "Canis Major", appMag: -1.46, dist: 8.6, notes: "Sirius is the brightest star in the night sky")
+        DetailView(star: StarClass (image: "Sirius", name: "Sirius", const: "Canis Major", appMag: "-1.46", dist: "8.6", notes: "Sirius is the brightest star in the night sky")
 )
     }
 }
