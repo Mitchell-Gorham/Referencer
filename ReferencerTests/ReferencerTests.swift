@@ -7,6 +7,7 @@
 //
 
 import XCTest
+import SwiftUI
 @testable import Referencer
 
 class ReferencerTests: XCTestCase {
@@ -45,6 +46,20 @@ class ReferencerTests: XCTestCase {
         
         XCTAssertEqual(3, starArray.count)
         
+    }
+    
+    func testImageDownload() {
+        guard let imageURL = URL(string:"https://www.google.com.au/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png") else {
+            return XCTFail("Invalid URL")
+        }
+        guard let imageData = try? Data(contentsOf: imageURL) else {
+            return XCTFail("Could not download data")
+        }
+        guard let uiImage = UIImage(data: imageData) else {
+            return XCTFail("Downloaded data does not contain image")
+        }
+        let downloadedImage = Image(uiImage: uiImage)
+        XCTAssertNotNil(downloadedImage)
     }
     
     func testPerformanceExample() {

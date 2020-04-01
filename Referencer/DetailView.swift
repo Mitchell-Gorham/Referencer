@@ -8,14 +8,19 @@
 
 import SwiftUI
 
-struct DetailView: View {
-    @ObservedObject var star: StarClass
 
+
+struct DetailView: View {
+    @ObservedObject public var star: StarClass
+    @State var tempstring: String = ""
     var body: some View {
         ScrollView(.vertical) {
             VStack() {
-                Image(star.image)
-                    //.frame(width:UIScreen.main.bounds.width)
+                star.image
+                TextField("Enter image URL", text: $tempstring, onCommit: {
+                    self.star.url = self.tempstring
+                }).textFieldStyle(RoundedBorderTextFieldStyle())
+                
                 TextField("Star Name", text: $star.name)
                     .font(.largeTitle)
                     .multilineTextAlignment(.center)
@@ -53,7 +58,8 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(star: StarClass (image: "Sirius", name: "Sirius", const: "Canis Major", appMag: "-1.46", dist: "8.6", notes: "Sirius is the brightest star in the night sky")
-)
+        DetailView(
+            star: StarClass (url: "https://www.google.com.au/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png", name: "Test Star", const: "Somewhere in the Sky", appMag: "1.50", dist: "11.5", notes: "This thing doesn't exist I tell you hwhat!")
+        )
     }
 }

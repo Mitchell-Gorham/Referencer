@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE126C1D243447A200C59F8E /* ImageDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE126C1C243447A200C59F8E /* ImageDownload.swift */; };
 		FE2060B82418AF55005CF795 /* StarClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE2060B72418AF55005CF795 /* StarClass.swift */; };
 		FE3E0F352433249C00E8801E /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3E0F342433249C00E8801E /* RowView.swift */; };
 		FE59561624172AD8005B7F03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE59561524172AD8005B7F03 /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE126C1C243447A200C59F8E /* ImageDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownload.swift; sourceTree = "<group>"; };
 		FE2060B72418AF55005CF795 /* StarClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarClass.swift; sourceTree = "<group>"; };
 		FE3E0F342433249C00E8801E /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		FE59561224172AD8005B7F03 /* Referencer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Referencer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,10 +115,11 @@
 				FE59561724172AD8005B7F03 /* SceneDelegate.swift */,
 				FEE729F32421DFA0008184F3 /* ContentView.swift */,
 				FE5A884D2420819A0016BC22 /* MasterView.swift */,
-				FE3E0F342433249C00E8801E /* RowView.swift */,
 				FE59561924172AD8005B7F03 /* DetailView.swift */,
 				FE2060B72418AF55005CF795 /* StarClass.swift */,
 				FED424CB242DAB8D0069C86A /* StarCatalogViewModel.swift */,
+				FE3E0F342433249C00E8801E /* RowView.swift */,
+				FE126C1C243447A200C59F8E /* ImageDownload.swift */,
 				FE59562024172AD9005B7F03 /* LaunchScreen.storyboard */,
 				FE59562324172AD9005B7F03 /* Info.plist */,
 				FE59561B24172AD9005B7F03 /* Assets.xcassets */,
@@ -290,6 +293,7 @@
 				FE59561824172AD8005B7F03 /* SceneDelegate.swift in Sources */,
 				FE2060B82418AF55005CF795 /* StarClass.swift in Sources */,
 				FE59561A24172AD8005B7F03 /* DetailView.swift in Sources */,
+				FE126C1D243447A200C59F8E /* ImageDownload.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

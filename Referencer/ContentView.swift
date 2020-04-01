@@ -19,7 +19,7 @@ struct ContentView: View {
                     leading: EditButton(),
                     trailing: Button(
                         action: {
-                            withAnimation { self.starCatalog.add(StarClass(image:"null", name:"New Body", const:"Enter Constellation", appMag: "0.0", dist: "0.0", notes: "Enter in some Notes" )) }
+                            withAnimation { self.starCatalog.add(StarClass(url: nil, name:"New Body", const:"Enter Constellation", appMag: "0.0", dist: "0.0", notes: "Enter in some Notes" )) }
                         }
                     ) { Image(systemName: "plus") }
                 )

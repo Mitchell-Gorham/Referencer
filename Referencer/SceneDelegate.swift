@@ -15,13 +15,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     // Class Array Declaration
     
-    let Sirius = StarClass (image: "Sirius", name: "Sirius", const: "Canis Major", appMag: "-1.46", dist: "8.6",
+    let Sirius = StarClass (url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Sirius_A_and_B_artwork.jpg/960px-Sirius_A_and_B_artwork.jpg", name: "Sirius", const: "Canis Major", appMag: "-1.46", dist: "8.6",
                             notes: "Sirius is the brightest star in the night sky")
-    let Messier = StarClass (image: "Messier 78", name: "Messier 78", const: "Orion", appMag: "+8.30", dist: "1350",
+    let Messier = StarClass (url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Messier_78.jpg/743px-Messier_78.jpg", name: "Messier 78", const: "Orion", appMag: "+8.30", dist: "1350",
                              notes: "Messier 78 was discovered by Pierre Méchain in 1780")
-    let Betelgeuse = StarClass (image: "Betelgeuse" ,name: "Betelgeuse", const: "Orion", appMag: "0.50", dist: "700",
+    let Betelgeuse = StarClass (url: "https://images.immediate.co.uk/production/volatile/sites/4/2020/02/GettyImages-1198303044-3583e97.jpg", name: "Betelgeuse", const: "Orion", appMag: "0.50", dist: "700",
                                 notes: "Pronounced Bettlejuice (Yes, as in the movie)")
-    let Pleiades = StarClass (image: "Pleiades", name: "Pleiades", const: "Taurus", appMag: "+1.6", dist: "444",
+    let Pleiades = StarClass (url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Pleiades_large.jpg/640px-Pleiades_large.jpg", name: "Pleiades", const: "Taurus", appMag: "+1.6", dist: "444",
                               notes: "Also known as The Seven Sisters")
         
     var starArray: StarCatalogViewModel = StarCatalogViewModel()
