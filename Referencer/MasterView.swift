@@ -21,9 +21,3 @@ struct MasterView: View {
         }
     }
 }
-
-//struct ReferencerListView_Previews: PreviewProvider {
-//    static var previews: some View {
-//          CatalogView()
-//    }
-//}

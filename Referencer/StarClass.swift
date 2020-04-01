@@ -9,15 +9,14 @@
 import SwiftUI
 
 class StarClass: ObservableObject, Identifiable {
-    @Published var url: String?      //  String that contains the URL to the image to be downloaded
+    @Published var url: String?     //  String that may contain the URL to the image to be downloaded
     var image: Image {
-        if let u = url {
-        return imageDownload(u)
+        if let u = url {            //
+        return imageDownload(u)     //  Attempts to download an image from the provided URL
+        } else {                    //
+            return Image("null")    //  If the url is empty, the default image is returned
         }
-        else {
-            return Image("null")
-        }
-    }  //  Stores Image data retrieved by the URL
+    }
     @Published var name: String     //  String containing the name of the celestial body
     @Published var const: String    //  String containing the name of the constellation that the celestial body belongs to
     @Published var appMag: String   //  String containing the apparent magnitude of the celestial body

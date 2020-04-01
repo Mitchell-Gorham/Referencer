@@ -23,3 +23,11 @@ struct RowView: View {
         }
     }
 }
+
+struct RowView_Previews: PreviewProvider {
+    static var previews: some View {
+        RowView(
+            starRow: StarClass (url: "https://www.google.com.au/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png", name: "Google Star", const: "The Connected Web", appMag: "1.50", dist: "11.5", notes: "These notes contain information")
+        )
+    }
+}

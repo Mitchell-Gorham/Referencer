@@ -8,6 +8,8 @@
 
 import SwiftUI
 
+// Takes the received string and attempts to convert it into an image, should it fail to do so, a default image is provided
+
 func imageDownload (_ input: String) -> Image {
     guard let imageURL = URL(string: input) else {
         return (Image("null"))
@@ -20,5 +22,4 @@ func imageDownload (_ input: String) -> Image {
     }
     let downloadedImage = Image(uiImage: uiImage)
     return downloadedImage
-    //return uiImage
 }
