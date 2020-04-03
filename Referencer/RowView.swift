@@ -11,6 +11,7 @@ import SwiftUI
 struct RowView: View {
     @ObservedObject var starRow: StarClass
     var body: some View {
+        //  Each row consists of an image, name and constellation text
         HStack() {
             starRow.image
                 .resizable()

@@ -11,9 +11,9 @@ import SwiftUI
 class StarClass: ObservableObject, Identifiable {
     @Published var url: String?     //  String that may contain the URL to the image to be downloaded
     var image: Image {
-        if let u = url {            //
+        if let u = url {            
         return imageDownload(u)     //  Attempts to download an image from the provided URL
-        } else {                    //
+        } else {
             return Image("null")    //  If the url is empty, the default image is returned
         }
     }

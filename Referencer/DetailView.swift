@@ -15,6 +15,7 @@ struct DetailView: View {
     @State var tempURL: String = ""
     var body: some View {
         ScrollView(.vertical) {
+            //  Displays the Image, url entry field and the name of the Star
             VStack() {
                 star.image
                 TextField("Enter image URL", text: $tempURL, onCommit: {
@@ -27,6 +28,7 @@ struct DetailView: View {
                     .multilineTextAlignment(.center)
                     .frame(width:UIScreen.main.bounds.width-25)
             }
+            // Displays fixed information and editable text fields for each of the properties of the star
             VStack{
                 HStack() {
                     Text("Constellation:\t\t\t")

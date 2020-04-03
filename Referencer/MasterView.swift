@@ -13,6 +13,7 @@ struct MasterView: View {
     
     var body: some View {
         List {
+            //  Populate the list with items from the starCatalog array
             ForEach(starCatalog.array) { item in
                 NavigationLink(destination: DetailView(star: item)) {
                     RowView(starRow: item)
