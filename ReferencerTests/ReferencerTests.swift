@@ -47,6 +47,14 @@ class ReferencerTests: XCTestCase {
         XCTAssertEqual(3, starArray.count)
         
     }
+    func testStarCatalogViewModel() {
+        let testArray: StarCatalogViewModel = StarCatalogViewModel()
+        testArray.add(StarClass(url: nil, name:"New Body", const:"Enter Constellation", appMag: "0.0", dist: "0.0", notes: "Enter in some Notes"))
+        XCTAssertEqual(1, testArray.array.count)
+        testArray.remove([0])
+        XCTAssertEqual(0, testArray.array.count)
+        
+    }
     
     func testImageDownload() {
         guard let imageURL = URL(string:"https://www.google.com.au/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png") else {

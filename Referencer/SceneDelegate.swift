@@ -31,7 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         
-        //  Add each of the previously created dummy classses to the empty StarCataLogViewModel array
+        //  Add each of the previously created dummy classses to the empty StarCatalogViewModel array
         starArray.add(Sirius)
         starArray.add(Messier)
         starArray.add(Betelgeuse)
